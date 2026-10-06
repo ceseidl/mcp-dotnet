@@ -1,5 +1,7 @@
 [English](README.md) | Português
 
+[![CI](https://github.com/ceseidl/mcp-dotnet/actions/workflows/ci.yml/badge.svg)](https://github.com/ceseidl/mcp-dotnet/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 # mcp-dotnet
 
 > **Início rápido**
@@ -64,3 +66,7 @@ src/
 ```
 
 Identificadores, nomes de tools e valores de enum permanecem em português de propósito; descrições e mensagens são bilíngues ("English / Português").
+
+## Licença
+
+[MIT](LICENSE). Autor: Carlos Eduardo Seidl.

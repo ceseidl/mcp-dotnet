@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build --nologo
+
+      - name: Smoke test (MCP client talks to the server over stdio)
+        run: |
+          out=$(dotnet run --project src/PedidosMcpClient --no-build)
+          echo "$out"
+          echo "$out" | grep -F 'listar_pedidos(status: Pago)'
+          echo "$out" | grep -F '"cliente":"Ana"'
+          echo "$out" | grep -F 'cancelar_pedido'
