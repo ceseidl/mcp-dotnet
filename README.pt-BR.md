@@ -2,6 +2,15 @@
 
 # mcp-dotnet
 
+> **Início rápido**
+
+```bash
+dotnet build
+dotnet run --project src/PedidosMcpClient --no-build
+```
+
+Precisa só do SDK do .NET 10. Detalhes em [Como rodar](#como-rodar).
+
 Um exemplo mínimo de servidor e cliente [MCP (Model Context Protocol)](https://modelcontextprotocol.io) em .NET 10, usando o pacote NuGet oficial `ModelContextProtocol` (2.2.0) sobre o transporte stdio.
 
 ## O que é

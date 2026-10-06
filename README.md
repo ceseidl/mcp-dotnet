@@ -2,6 +2,15 @@ English | [Português](README.pt-BR.md)
 
 # mcp-dotnet
 
+> **Quick start**
+
+```bash
+dotnet build
+dotnet run --project src/PedidosMcpClient --no-build
+```
+
+Needs only the .NET 10 SDK. Details in [How to run](#how-to-run).
+
 A minimal example of an [MCP (Model Context Protocol)](https://modelcontextprotocol.io) server and client in .NET 10, using the official `ModelContextProtocol` NuGet package (2.2.0) over the stdio transport.
 
 ## What it is
