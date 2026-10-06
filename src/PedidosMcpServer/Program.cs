@@ -5,8 +5,10 @@ using PedidosMcpServer;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-// No stdio, o stdout é o canal do protocolo: os logs vão
-// para stderr, senão corrompem as mensagens JSON-RPC.
+// EN: With stdio, stdout is the protocol channel: logs go to
+// EN: stderr, otherwise they corrupt the JSON-RPC messages.
+// PT: No stdio, o stdout é o canal do protocolo: os logs vão
+// PT: para stderr, senão corrompem as mensagens JSON-RPC.
 builder.Logging.AddConsole(o =>
     o.LogToStandardErrorThreshold = LogLevel.Trace);
 

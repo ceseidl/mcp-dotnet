@@ -14,7 +14,7 @@ var opcoes = new StdioClientTransportOptions
 await using var cliente =
     await McpClient.CreateAsync(new StdioClientTransport(opcoes));
 
-Console.WriteLine("Ferramentas descobertas:");
+Console.WriteLine("Discovered tools / Ferramentas descobertas:");
 foreach (var tool in await cliente.ListToolsAsync())
     Console.WriteLine($"- {tool.Name}: {tool.Description}");
 
