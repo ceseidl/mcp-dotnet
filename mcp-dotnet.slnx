@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PedidosMcpClient/PedidosMcpClient.csproj" />
+    <Project Path="src/PedidosMcpServer/PedidosMcpServer.csproj" />
+  </Folder>
+</Solution>
