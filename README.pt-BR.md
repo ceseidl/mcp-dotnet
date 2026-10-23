@@ -4,6 +4,8 @@
 
 # mcp-dotnet
 
+Artigo completo: <https://ceseidl.com.br/artigos/mcp-dotnet/>
+
 > **Início rápido**
 
 ```bash

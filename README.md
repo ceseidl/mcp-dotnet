@@ -4,6 +4,8 @@ English | [Português](README.pt-BR.md)
 
 # mcp-dotnet
 
+Full article: <https://ceseidl.com.br/en/artigos/mcp-dotnet/>
+
 > **Quick start**
 
 ```bash
